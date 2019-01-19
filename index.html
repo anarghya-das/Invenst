@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>(function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-3974203-1', 'auto'); ga('send', 'pageview');</script>
+    <title>Invenst</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="Invenst-Idea-Bank\Invenststyle.css">
+</head>
+
+<body>
+    <div class="banner">The Idea Bank</div>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for ideas..">
+    <input type="image" id="Alexa" src="Invenst-Idea-Bank\Idea Bank Icons\Alexa.png" width="40px;" height="40px;"
+        onClick="filter(this.id)" title="Alexa">
+    <input type="image" id="Chrome" src="Invenst-Idea-Bank\Idea Bank Icons\Chrome.png" width="40px;" height="40px;"
+        onClick="filter(this.id)" title="Chrome">
+    <input type="image" id="Financial" src="Invenst-Idea-Bank\Idea Bank Icons\Financial.png" width="40px;" height="40px;"
+        onClick="filter(this.id)" title="Financial">
+    <input type="image" id="Hardware" src="Invenst-Idea-Bank\Idea Bank Icons\Hardware.png" width="40px;" height="40px;"
+        onClick="filter(this.id)" title="Hardware">
+    <input type="image" id="Health" src="Invenst-Idea-Bank\Idea Bank Icons\Health.png" width="40px;" height="40px;"
+        onClick="filter(this.id)" title="Health">
+    <input type="image" id="IOT" src="Invenst-Idea-Bank\Idea Bank Icons\IOT.png" width="40px;" height="40px;" onClick="filter(this.id)"
+        title="IOT">
+    <input type="image" id="Mobile" src="Invenst-Idea-Bank\Idea Bank Icons\Mobile.png" width="40px;" height="40px;"
+        onClick="filter(this.id)" title="Mobile">
+    <input type="image" id="University" src="Invenst-Idea-Bank\Idea Bank Icons\University.png" width="40px;" height="40px;"
+        onClick="filter(this.id)" title="University">
+    <input type="image" id="Wearable" src="Invenst-Idea-Bank\Idea Bank Icons\Wearable.png" width="40px;" height="40px;"
+        onClick="filter(this.id)" title="Wearable">
+    <input type="image" id="Web" src="Invenst-Idea-Bank\Idea Bank Icons\Web.png" width="40px;" height="40px;" onClick="filter(this.id)"
+        title="Web">
+    <table id="myTable" align="right">
+        <tr class="header">
+            <th class="headerName" style="width:20%;">Idea</th>
+            <th class="headerName" style="width:10%;">Type</th>
+            <!-- <th class="headerName" style="width:40%;">People Working</th> -->
+        </tr>
+
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Club Website Creation</h2>
+                    </button>
+                    <div class="fold">
+                        <p>Make a website for this club! We're looking for a student leader to help develop and
+                            maintain the web applications that drive Inve[n|s]tUB. </p>
+                        <p><em>What sort of team will it take?</em><br>A student with a background in basic web
+                            development techniques, including PHP, HTML, CSS, and SQL</p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Club Website Creation">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Web.png" id="Web" width="30px;" height="30px;" title="Web"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Wearables for Swimmers</h2>
+                    </button>
+                    <div class="fold">
+                        <p>Fitness related gears and Apps are gaining more and more popularity. Speedo has an App that
+                            runs on Samsung's smart watch that records the number of laps in a pool. However, it works
+                            only in free-style swimming mode and won't recognize the breaststroke motion at all. Given
+                            the various built-in sensors available on this and other watches, it is possible to develop
+                            an App that recognizes breaststroke.</p>
+                        <p><em>What might the team need to succeed?</em><br>Develop an App that can recognize
+                            breaststroke motion. As a first step, this app can run on an iPhone/Android phone to prove
+                            the concept. Ideally, this can be customized for other (water-proof) watches.</p>
+                        <p><em>What sort of team will it take?</em><br>A student who can develop iOS/Android apps </p><a
+                            class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Wearables for Swimmers">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td>No Tags</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Alexa/Google Assistant Calendar</h2>
+                    </button>
+                    <div class="fold">
+                        <p>We can now set alarms on Amazon Echo and Google Home and wake up with a preset music.
+                            Sometimes, it'd be better if Alexa/Google Assistant can announce the next appointment with
+                            a user-specified keyword (e.g., leave for a meeting).</p>
+                        <p><em>What might the team need to succeed?</em><br>Enable Alex/Google Assistant to announce
+                            appointment.</p>
+                        <p><em>What sort of team will it take?</em><br>One or two students who know about Alexa and
+                            Google Assistant</p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Alexa/Google Assistant Calendar">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Alexa.png" id="Alexa" width="30px;" height="30px;" title="Alexa"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Social Media Broadasting</h2>
+                    </button>
+                    <div class="fold">
+                        <p>There are a plethora of social media sites that make up our online networks. While each may
+                            have a personal niche in the way that we use it, there are times when it would be great if
+                            we could post to all of our networks simultaneously. The idea would be to develop a service
+                            that lets you configure multiple social media accounts (twitter, facebook, linkedin,
+                            google+, etc) and have a single post go out to all of them via API calls.</p><a class="getstarted"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Social Media Broadasting">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Web.png" id="Web" width="30px;" height="30px;" title="Web"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Augmented Reality Framework</h2>
+                    </button>
+                    <div class="fold">
+                        <p>Apps like "19 crimes" (now called Living Wine Label) use smartphones' built in cameras to
+                            recognize labels on a merchandise (or simply QR codes) and then perform an action (e.g.,
+                            playing a video). I am not sure how difficult it is to develop a simple app like this from
+                            scratch, but it would be nice to have a "framework" which could make such an app
+                            development very easy by providing a library of functions that can be called by an app
+                            developer such that all the developer needs to do is to specify what input(s) to use as a
+                            trigger and what actions to perform. Here, the input could be an image of the object/label
+                            captured by a camera, keywords associated with the object, or voice input containing some
+                            keywords. The actions to perform can be as simple as playing a prerecorded youtube video or
+                            displaying prerecorded background information on the object/product. </p><a class="getstarted"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Augmented Reality Framework">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Hardware.png" id="Hardware" width="30px;" height="30px;"
+                    title="Hardware"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Animating Emojis</h2>
+                    </button>
+                    <div class="fold">
+                        <p>Develop a tool to create a mix-reality, animated emoji or video. The tool takes a photo (or
+                            a short video-clip without any sound) involving a person or two (e.g, the sender), and then
+                            generate lip movement and/or head/body movement based on inputs (could be some text or
+                            soundbite) to create a mixed-reality animated emoji/message for sharing through social
+                            media (an message app, youtube, FB etc).</p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Animating Emojis">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td>No Tags</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Walking GPS</h2>
+                    </button>
+                    <div class="fold">
+                        <p>"Create a mobile ""walking GPS"" of the campus that will help new students find their way
+                            around. It can take a building and room number, and give walking directions. It should be
+                            able to optimize for ""inside only"" routes if desired.
+                            "</p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Walking GPS">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Mobile.png" id="Mobile" width="30px;" height="30px;" title="Mobile"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Trading Algorithms</h2>
+                    </button>
+                    <div class="fold">
+                        <p>Develop trading algorithms that can be used to take advantage of temporal market
+                            inefficiencies. </p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Trading Algorithms">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td>No Tags</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Financial Data Visualization</h2>
+                    </button>
+                    <div class="fold">
+                        <p>Develop 3D VR representation of price data for derivatives. Using Galaxy 360, Note 8 Apps.</p><a
+                            class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Financial Data Visualization">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td>No Tags</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Mobile Vision Assist</h2>
+                    </button>
+                    <div class="fold">
+                        <p>Develop a "vision assist" solution on a mobile phone to allow the visually impaired gain a
+                            better understanding of their surroundings as they move through their environment. This
+                            solution would include: object recognition, estimate of object distance from subject,
+                            detection of collision with object, and ability to scan area in search of object. The UI
+                            for this application would need to be predominately voice commands. </p><a class="getstarted"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Mobile Vision Assist">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Mobile.png" id="Mobile" width="30px;" height="30px;" title="Mobile"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Local IOT Cloud</h2>
+                    </button>
+                    <div class="fold">
+                        <p>Develop a "local cloud" Internet-of-Things type hub that focuses on keeping sensor and
+                            device information under the user's control. Ideally it would be able to speak preexisting
+                            IoT protocols (such as Z-wave, ZigBee, 6LowPAN, etc.) and pair with commercial IoT devices,
+                            keeping their communications local and private. User-managed gating to public IoT services
+                            (or even an in-house IoT SaaS solution) should be available for those things the user
+                            *does* want to access remotely.
+
+                            The door is open for developing connected devices, as well, although I would suggest that
+                            this is a separate or follow-on project.</p>
+                        <p><em>What might the team need to succeed?</em><br>Probably a SBC platform (Pi, etc.), some
+                            IoT devices.</p>
+                        <p><em>What sort of team will it take?</em><br>CS, CEng, possibly EE, depending on what devices
+                            they want to support and how much implementation they want to do in-house.</p><a class="getstarted"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Local IOT Cloud">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td>No Tags</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Tab Completion</h2>
+                    </button>
+                    <div class="fold">
+                        <p>"Tab completion is a common feature in command-line interfaces. In bash, for example, if I
+                            type:
+                            `$> ec\t`
+                            The command line gets replaced by:
+                            `$> echo `
+                            This is relatively easy to implement, as the semantics of command-line expressions are
+                            positional: The first field is always a command, the second and subsequent fields are files
+                            or arbitrary strings (admittedly newer versions of bash let you do more interesting
+                            things). A language like SQL on the other hand is (1) stateful, (2) needs to draw in
+                            external information about tables, columns, (3) also has to contend with name aliasing.
+                            Concretely:
+                            1) Statefulness
+                            > SELECT * FROM X\t
+                            Could be completed with the rest of the table name (i.e. ""Xtensions""), "", [another
+                            table]"", or a SQL keyword ""FROM"", ""WHERE"". Typically when parsing the set of available
+                            options is represented by a state in a finite state machine compiled from a user-provided
+                            grammar.
+                            2) External information
+                            > SELECT foo\t
+                            At this point in the query information comes from outside of the grammar: You need to query
+                            the database to figure out which fields begin with 'foo'
+                            3) Aliasing:
+                            > SELECT foo.bar FROM myTable AS foo WHERE f\t
+                            The fact that 'foo' is a table name comes from inside the query. In other words, you need
+                            to partially parse the query to figure out how to parse the query completion.
+                            In short, we're looking to add tab completion to Mimir (http://mimirdb.info). Mimir is
+                            written in Java uses JLine3 to provide command line services (it has a completion widget).
+                            It would be nice if we could trash our existing SQL parser and replace it with something
+                            newer and more extensible as well."</p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Tab Completion">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td>No Tags</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Possible Query Determination</h2>
+                    </button>
+                    <div class="fold">
+                        <p>"Mimir is a database system that automatically ""repairs"" messy data and allows users to
+                            query the fixed version. The gimmick is that we preserve the original values and other
+                            possible repairs of the data. Right now, we can do two things:
+                            - Query the most likely (Best Guess) repair
+                            - Generate a set of sampled repairs
+                            The goal of this project is to provide support for POSSIBLE and existential POSSIBLE
+                            queries. A POSSIBLE query:
+                            > SELECT POSSIBLE A, B, ... FROM ...
+                            ... computes and returns the full set of results that could possibly appear from SELECT A,
+                            B, ... FROM ... in any repair. Each tuple is emitted exactly once, regardless of how many
+                            possible worlds it appears in (although different tuples with the same values may be
+                            emitted). An optional CONF() function call emits the probability of that particular row
+                            appearing.
+
+                            The first goal would be to add support for POSSIBLE queries in Mimir. However, there are
+                            two limitations to solely POSSIBLE queries. First, POSSIBLE queries are slow (they require
+                            enumerating a very large state space). Second, in some cases (e.g. when a single problem
+                            admits an infinite or continuous domain of repairs), POSSIBLE queries may produce an
+                            infinite number of outputs.
+
+                            The second goal then would be to combine POSSIBLE and existential (EXISTS) queries.
+                            Concretely, an existential query
+                            > EXISTS SELECT * FROM R WHERE A = 5
+                            ... returns simply true or false – true if the select query has at least one result, false
+                            otherwise. For example, the following query returns true if there is at least one row in R
+                            where A = 5.
+                            When combined with SELECT POSSIBLE queries, the resulting query essentially tests to see if
+                            there is any possible circumstance under which the query could return some value. Such
+                            queries are similar to why/why-not provenance, but not quite the same. Why/why-not
+                            provenance allows a wide variety of database modifications to serve as causal explanations
+                            (adding/removing tuples, changing values, etc...).
+
+                            For more background see:
+                            > https://github.com/UBOdin/mimir/wiki/Concepts
+                            > https://github.com/UBOdin/mimir/issues/178
+                            > https://github.com/UBOdin/mimir/issues/245"</p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Possible Query Determination">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td>No Tags</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Mobile Privacy with TOR</h2>
+                    </button>
+                    <div class="fold">
+                        <p>The goal of the project is to develop a TOR client library for Android using Kotlin. TOR is
+                            an anonymity network that allows you to hide what you are doing in the Internet. Kotlin is
+                            a new language that has recently become one of the official language of Android. There is
+                            no good client library for TOR (even for Java or C++), and the goal of the project is to
+                            develop one using Kotlin.</p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Mobile Privacy with TOR">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Mobile.png" id="Mobile" width="30px;" height="30px;" title="Mobile"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Kotlin Library</h2>
+                    </button>
+                    <div class="fold">
+                        <p>"The goal of the project is to develop a nightmare-style browser automation library for
+                            Kotlin. There are two things to explain here---one is what Kotlin is, and the other is what
+                            I mean by a nightmare-style browser automation library. First, Kotlin
+                            (https://kotlinlang.org) is a new language that has recently become one of the official
+                            languages of Android. It has some nice language features such as static typing, null
+                            safety, lambda functions, etc., but at the same time its grammar is concise. Because of
+                            that, it can be used for quick prototyping (comparable to python) as well as serious
+                            production development (comparable to Java).
+
+                            Now, a browser automation library allows you to interact with a browser programatically.
+                            For example, you can click web page buttons, fill out web forms, etc., all programmatically
+                            using a browser automation library. This is good for web app testing as well as browser
+                            task automation.
+
+                            There is (as far as I know) no browser automation library for Kotlin yet. Since Kotlin is a
+                            new language good for many things, I believe there has to be a browser automation library
+                            for Kotlin as well. The model we can follow is a browser automation library called
+                            nightmare (https://github.com/segmentio/nightmare). It provides a high-level API good
+                            enough for simple task automation and testing.
+
+                            There is a low-level browser automation library called Selenium Web Driver
+                            (http://www.seleniumhq.org/projects/webdriver/). This can be used as an underlying library.
+
+                            In summary, the goal is to develop a nightmare-style browser automation library for
+                            Kotlin."</p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Kotlin Library">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Mobile.png" id="Mobile" width="30px;" height="30px;" title="Mobile"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Scratch extension for FONA</h2>
+                    </button>
+                    <div class="fold">
+                        <p>"Prototype and document a Scratch extension to interface with an Adafruit FONA board, and
+                            produce a PoC telephony interface using Scratch.
+
+                            We're looking to put together a summer course for middle school students. During this
+                            course, participants will be designing, assembling, and programming mobile phones using
+                            off-the-shelf components. For the Comp Sci/Eng component of this course, they'll be
+                            developing an interface for driving the modem (e.g., dialing, texting,
+                            activating/deactivating data). Since we'd like to make this accessible to middle-schoolers,
+                            we need to make these capabilities accessible through a more intuitive programming language
+                            like Scratch."</p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Scratch extension for FONA">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td>No Tags</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Power Monitoring</h2>
+                    </button>
+                    <div class="fold">
+                        <p>A contactless power monitoring solution for installation in a residential electrical system.
+                            It would use current transformers to monitor the power usage on individual residential
+                            circuits (either at the breaker panel or elsewhere) and provide the data in some
+                            standardized form for local or cloud processing. There exist commercial solutions in this
+                            space, but they are generally either a) very expensive (typically not intended for
+                            residential use), b) proprietary cloud-based solutions with limited data protection or
+                            access to raw data, or c) complicated inference-based collection (using, e.g., only the
+                            incoming service lines for detection, not individual circuits), or even all of the above.</p>
+                        <p><em>What might the team need to succeed?</em><br>A working knowledge of power systems
+                            (including, but not limited to, basic electrical principles and AC concepts such as power
+                            factor), data collection, electronics and software design.
+
+                            For "product" quality design, many standards will have to be engaged, and likely
+                            conformance testing from the FCC and an entity like UL. There are almost certainly NEC/NFPA
+                            concerns as well.
+
+                            The key for marketing of such a device would be ease of installation (either easy for a
+                            homeowner or inexpensive to hire an electrician) and a simple interface for understanding
+                            the collected data and its implications. Good engineering and HCI will be necessary.</p>
+                        <p><em>What sort of team will it take?</em><br>EE, ME, CEng, and CS. The basic design is mostly
+                            EE/ME, and then CEng/CS can take the collected data as far as they want.</p><a class="getstarted"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Power Monitoring">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td>No Tags</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Sign Language Dictionary</h2>
+                    </button>
+                    <div class="fold">
+                        <p>I want to build a sign language dictionary/learning app that is specific to coding. During
+                            my time at WiCHacks, I teamed up with a partially deaf girl and a student of interpretation
+                            major. In general, I saw a lot of resources accessible to them from the department
+                            (including a deaf Professor, Professor Karen Beiter) and I feel like a resource like this
+                            could help our students as well as many others feel more welcome to the department and to
+                            CS.</p>
+                        <p><em>What might the team need to succeed?</em><br>I'm not too familiar with app development
+                            so I don't really know what it's technical requirements are.
+                            I'm guessing- developer account and a database.</p>
+                        <p><em>What sort of team will it take?</em><br>Programmers, Designers, as well as students with
+                            knowledge of ASL (I know a few who might be down to help!)</p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Sign Language Dictionary">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td>No Tags</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Electric Vehicle Infrastructure Planning</h2>
+                    </button>
+                    <div class="fold">
+                        <p>The vision of this early-stage mobile/web concept is to CREATE PEACE OF MIND for current and
+                            future electric vehicle drivers in need — especially those with no way to plug in at home
+                            or work — in the form of A RADICALLY SIMPLE SHORTCUT to influence and pioneer value for
+                            their ideal public charging destinations.</p>
+                        <p><em>What might the team need to succeed?</em><br>The product will be heavily data-centric,
+                            monetizing its end users' mobile inputs and metadata on an open source, two-sided eCommerce
+                            / advertising web platform geared toward stakeholders at their preferred destinations.
+
+                            With the market for this solution only beginning to emerge, reaching market validation and
+                            an MVP will take some work.
+
+                            The team needs to tailor the solution's architecture to a prospective business model and
+                            achieve buy-in in advance . . . but there is potential to dominate the target niche at
+                            scale, globally.</p>
+                        <p><em>What sort of team will it take?</em><br>Co-founder(s) with strategic consulting,
+                            marketing and/or data science experience in the startup realm
+
+                            Faculty adviser(s) in matching disciplines
+
+                            Intern(s) to execute research projects and reports
+
+                            Developer(s)* in mobile / Drupal / GIS *may be outsourced
+
+                            An angel wouldn't be turned away. . . .</p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Electric Vehicle Infrastructure Planning">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Web.png" id="Web" width="30px;" height="30px;" title="Web"
+                    5" hspace="5"><img src="Invenst-Idea-Bank/Idea Bank Icons/Mobile.png" id=" Mobile" width="30px;"
+                    height="30px;" title=" Mobile"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Techology Learning Modules</h2>
+                    </button>
+                    <div class="fold">
+                        <p>Help create a series of learning modules for new technologies, to lower the barrier of entry
+                            for anyone wanting to develop for those technologies. Initially, we'd love to build modules
+                            for Android apps, iOS apps, HoloLens, Echo/Alexa, and Google Home. Other technologies also
+                            are welcome. These modules would be available to all innovators at UB. </p><a class="getstarted"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Techology Learning Modules">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Web.png" id="Web" width="30px;" height="30px;" title="Web"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>NFTA Transportation Improvement</h2>
+                    </button>
+                    <div class="fold">
+                        <p>Develop an app that will let Niagara Frontier Transportation Authority crowdsource reporting
+                            on the condition of their transit stops. The app would capture the following data
+
+                            Geolocation
+                            Picture of the stop
+                            Prompts
+                            Attachment (utility pole, light pole, street sign, building, etc.…)
+                            Is there a stop id? (yes, no)
+                            What routes are listed on the sign? (drop down menu – select all)
+                            Condition of the sign (poor, fair, good, new)
+                            Sign visibility to driver (poor, fair, good)
+                            Is there a paired stop? (yes, no)</p>
+                        <p><em>What might the team need to succeed?</em><br>Mobile expertise in android and iOS (could
+                            start with one or the other)</p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=NFTA Transportation Improvement">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Mobile.png" id="Mobile" width="30px;" height="30px;" title="Mobile"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Mobile Musician Connect</h2>
+                    </button>
+                    <div class="fold">
+                        <p>Mobile application connecting amateur musicians to drug rehab facilities (or other
+                            facilities) looking to host live music. </p>
+                        <p><em>What might the team need to succeed?</em><br>Programmer. Market validation and proof of
+                            concept needed. </p>
+                        <p><em>What sort of team will it take?</em><br>Musicians, connections at the mental health
+                            facilities, and computer programmers. </p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Mobile Musician Connect">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Mobile.png" id="Mobile" width="30px;" height="30px;" title="Mobile"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>Media Library Duplicate Detector</h2>
+                    </button>
+                    <div class="fold">
+                        <p>Develop a chrome extension that will allow you to input libraries of media (books, music,
+                            games, etc) and warn you if you are trying to re-purchase those things on Amazon or other
+                            on-line retailers. </p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=Media Library Duplicate Detector">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Chrome.png" id="Chrome" width="30px;" height="30px;" title="Chrome"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>The Happiness Experiment</h2>
+                    </button>
+                    <div class="fold">
+                        <p>We are all pursuing happiness, but yet few of us consistently find it. The Happiness
+                            Experiment from Perfect Planet, LLC is a 29 day program designed to help all of us find
+                            more happiness consistently in our lives. It is a fun, exciting multi-layer program that
+                            will help you build a daily happiness routine based on what truly matters to you.</p>
+                        <p><em>What might the team need to succeed?</em><br>To see the vision and potential of helping
+                            people and organizations become happier. The creativity to make the user experience
+                            fantastic. Programming skills, app development skills, data collection and analytics to
+                            deliver on the potential.</p>
+                        <p><em>What sort of team will it take?</em><br>It is going to take a team of creative, skilled
+                            programmers, engineers and financial wizards to enable the program to reach its full
+                            potential. The program has been beta tested in hard copy only and now needs to be digitally
+                            developed. Web app is a possibility, mobile app would be better and the addition of data
+                            collection and analysis would make it truly spectacular. </p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=The Happiness Experiment">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Web.png" id="Web" width="30px;" height="30px;" title="Web"
+                    5" hspace="5"><img src="Invenst-Idea-Bank/Idea Bank Icons/Mobile.png" id=" Mobile" width="30px;"
+                    height="30px;" title=" Mobile"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2>UB Technology Unifier</h2>
+                    </button>
+                    <div class="fold">
+                        <p>A Google Chrome extension specifically to unify all of the functions of several University
+                            at Buffalo services (HUB, myUB, UBLearns, UB Printing, etc.). A way to gather the most-used
+                            tools for UB students and centralize it to a Chrome extension that makes it easier and more
+                            accessible rather than have them split across different domains. Would be similar to the UB
+                            Mobile app but a desktop version. Medium-sized project primarily based upon showcasing
+                            features and maximizing student productivity. Other potential features could include:
+
+                            – University at Buffalo news
+                            – A list for upcoming UB events
+                            – Calendar
+                            – To-Do List
+                            – Notifications when a notification appears on UBLearns or myHUB</p>
+                        <p><em>What might the team need to succeed?</em><br>The team will need to succeed in creating a
+                            Google Chrome extension for the UB student body that maximizes student productivity. The
+                            project should not take too long (5-10 weeks), it is a medium-sized project and would only
+                            require (at least) an HTML file for the popup window, a CSS file for the style (Bootstrap
+                            possibly), a manifest.json, and JavaScript files for different features.</p>
+                        <p><em>What sort of team will it take?</em><br>Mainly a team of web developers/designers. The
+                            knowledge required for this project would be mainly Google Chrome Extension knowledge,
+                            HTML, CSS, JavaScript, JSON, jQuery, Bootstrap, etc. Additional knowledge would include:
+                            web scraping, graphic design, etc.</p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=UB Technology Unifier">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Chrome.png" id="Chrome" width="30px;" height="30px;" title="Chrome"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2></h2>
+                    </button>
+                    <div class="fold">
+                        <p>Develop an asset management system for hardware in the undergraduate CSE labs. This will let
+                            students know what is available when, if they need specialized tools like echo, hololens,
+                            etc.</p>
+                        <p><em>What might the team need to succeed?</em><br>Web development and SQL experience</p>
+                        <p><em>What sort of team will it take?</em><br>Programmers and designers</p><a class="getstarted"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td><img src="Invenst-Idea-Bank/Idea Bank Icons/Web.png" id="Web" width="30px;" height="30px;" title="Web"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2></h2>
+                    </button>
+                    <div class="fold">
+                        <p>Develop a printable identification header for exams and assignments that students can
+                            quickly and easily fill in that is also easily computer-interpreted from a scan. For
+                            example, a bubble-form interface or a Person Number entry similar to Russian postal codes
+                            (https://en.wikipedia.org/wiki/Postal_codes_in_Russia), along with the software to find and
+                            read this data from a scanned assignment.
+
+                            Ideally the header would either be modular or generated in some flexible markup system
+                            (producing PDF, SVG, or similar, or embeddable directly in the assignment document; say,
+                            LaTeX), so that professors could adopt their own exam formats and the software could still
+                            locate and interpret the ID block. The associated software must be platform-independent and
+                            either standalone (e.g., given a scanned exam on the command line, output either a person
+                            number (perhaps with confidence) or a failure value) or an easily embedded library (a
+                            Python or Java package, for example). While "platform independence" need not be universal,
+                            it should certainly be able to be run on Linux, Windows, and macOS.</p><a class="getstarted"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td>No Tags</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2></h2>
+                    </button>
+                    <div class="fold">
+                        <p>I'm a software engineer working on an event-planning app. This app essentially allows anyone
+                            to browse various events at any time in any location. These events can be small, personal
+                            events (ex: "come play board games at my house") or large-scale, highly organized events
+                            (ex: "come see Musician X perform at Venue Y, tickets cost Z dollars). These events can be
+                            free or paid, and can have enrollment capacities. With enough users, this app can serve as
+                            a marketplace for ticket sales (similar to Eventbrite or Ticketmaster).</p>
+                        <p><em>What might the team need to succeed?</em><br>As of now, the core needs are ideation,
+                            software development, and marketing/branding. Once the app is ready to release, marketing
+                            and legal assistance will be needed.</p><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td>No Tags</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container"><button class="view"><img src="Invenst-Idea-Bank\invenst3.PNG" class="circlecrop"
+                            style="float:left;display:inline-block;" width="50px;" height="50px;"><i class="fa fa-fw fa-chevron-down"
+                            style="float:right;display:inline-block;" width="50px;" height="50px;"></i>
+                        <h2></h2>
+                    </button>
+                    <div class="fold">
+                        <p>UBCarPool is currently a FaceBook page that serves as a medium for UB students to connect
+                            with other UB students who are willing ride share, no matter how far the distance. Our goal
+                            is to most effectively connect students to drivers and drivers to students, paving a way
+                            for students to carpool with one another to any location. So if you would like to carpool
+                            with someone who is driving to NYC, for example, we will make a post online for drivers to
+                            see. Once a driver responds, we will connect them with the passenger who is willing to
+                            share the cost of gas. Once they are connect, the students will be able to handle travels
+                            from there. My goal is to put this service into an easily accessible and easy to use
+                            application. If we can put it into an application, this idea will reach more people and the
+                            act of connecting people and setting up rides can work more effectively through the
+                            algorithms/ filters designed using the application. Eventually I would like to move this
+                            application to other Universities, and eventually big businesses.
+
+                            UB CarPool can help us all save money, save the environment, and meet new people!</p>
+                        <p><em>What might the team need to succeed?</em><br>We will be working towards designing a
+                            mobile app. I know how I would like it to be designed, however I am always open to
+                            suggestions. It is a great idea to begin the app and market the idea and see how the UB
+                            campus takes it. Within the app, I would like to conduct surveys, and charge fees/ receive
+                            payment, and tasks that would make the app a success.
+
+                            As a group, we all need hard work, dedication, and time in order to succeed. </p>
+                        <p><em>What sort of team will it take?</em><br>To develop this application will take a mobile
+                            app developer/ computer science/ programmers. All programming backgrounds are welcome. </p><a
+                            class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdiT9sDnfxA61PEsG4-HcMIieiIj5tpLn-ThlE41pGrbOSD9Q/viewform?entry.972833926=">
+                            I'm Interested!</a>
+                    </div>
+                </div>
+            </td>
+            <td>No Tags</td>
+        </tr>
+        </div>
+</body>
+<script src="Invenst-Idea-Bank\ideaBankScript.js"></script>
+
+</html>
